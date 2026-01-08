@@ -78,6 +78,27 @@
   font-weight: 700;
 }
 
+/* Slogan final */
+.bgc-oath {
+  margin-top: 22px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: center;
+  color: rgba(233, 237, 244, 0.95);
+  letter-spacing: 0.01em;
+}
+
+.bgc-oath strong {
+  font-weight: 700;
+}
+
+/* Accent rouge BGC */
+.bgc-oath-highlight {
+  color: #ff3b3b;
+  font-weight: 800;
+  text-shadow: 0 0 14px rgba(255, 59, 59, 0.35);
+}
+
 .bgc-actions {
   margin-top: 24px;
   display: flex;
@@ -103,6 +124,40 @@
   padding: 12px 18px;
   cursor: pointer;
 }
+
+.bgc-card--spaced {
+  margin-top: 20px;
+}
+
+/* Wrapper animé pour le concept */
+.concept-wrapper {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 400ms ease,
+    opacity 300ms ease;
+}
+
+/* État ouvert */
+.concept-wrapper.open {
+  max-height: 600px; /* suffisant pour le contenu */
+  opacity: 1;
+}
+
+/* Espace au-dessus de la carte concept */
+.bgc-card--spaced {
+  margin-top: 20px;
+}
+
+/* Bouton actif */
+.btn-ghost.is-active {
+  border-color: rgba(255, 59, 59, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(255, 59, 59, 0.18),
+    0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
 
 .bgc-footer {
   margin-top: 24px;
